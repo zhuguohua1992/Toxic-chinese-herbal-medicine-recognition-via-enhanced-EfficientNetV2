@@ -15,4 +15,4 @@ This project introduces a Multi-Scale Feature Fusion (MSFF) module and a CBAM at
 
 ## 🚀 Training
 ```example
-python tools/train.py models/Enhanced-efficientnetv2/Enhanced-efficientnetv2.py
+python tools/train.py models/efficientnetv2/Enhanced-efficientnetv2.py
