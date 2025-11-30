@@ -1,19 +1,18 @@
-# Toxic Chinese Herbal Medicine Recognition in Real-World Images via Multi-Scale and Attention-Enhanced EfficientNetV2
+# Toxic Chinese Herbal Medicine Recognition via Multi-Scale and Attention-Enhanced EfficientNetV2
 
-This repository provides the official PyTorch implementation of our work **"Toxic Chinese Herbal Medicine Recognition in Real-World Images via Multi-Scale and Attention-Enhanced EfficientNetV2"**.
+This repository contains the official PyTorch implementation for the paper:
 
-The project focuses on **fine-grained recognition of 47 toxic Chinese herbal medicines** in **real-world images with complex backgrounds, small target regions, and challenging lighting conditions**.  
-Building upon EfficientNetV2, we introduce:
+**"Toxic Chinese herbal medicine recognition in real-world images via multi-scale and attention-enhanced EfficientNetV2"**
 
-- a **Multi-Scale Feature Fusion (MSFF)** module to better capture multi-level semantic and structural information;  
-- a **Convolutional Block Attention Module (CBAM)** to adaptively emphasize discriminative herbal regions while suppressing cluttered backgrounds.
+## 📌 Overview
+This project introduces a Multi-Scale Feature Fusion (MSFF) module and a CBAM attention block into the EfficientNetV2 backbone to improve recognition accuracy of toxic Chinese herbal medicines under real-world visual environments with complex backgrounds and small target regions.
 
-Under the same training settings as ResNet, ResNeXt, and vanilla EfficientNet baselines, the proposed MSFF + CBAM enhanced EfficientNetV2 achieves **consistently higher Top-1 accuracy, mean precision, mean recall, and macro F1-score**, especially on a curated **Small-Target & Complex-Background Challenge Set**.
+## ✨ Key Features
+- Multi-Scale Feature Fusion for enhanced representation of small objects
+- CBAM attention to suppress background noise and focus on herbal regions
+- Strong performance improvement over ResNet, ResNeXt, EfficientNet, and Transformer baselines
+- Robust performance on challenging real-scene images
 
-This codebase includes:
-- model definitions (EfficientNetV2 + MSFF + CBAM),
-- training and evaluation scripts,
-- configuration examples for reproducing the main experimental results reported in the paper.
-
-If you use this repository in your research, please consider citing our work.
-
+## 🚀 Training
+```example
+python tools/train.py models/efficientnetv2/efficientnetv2.py
